@@ -1,0 +1,52 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+/* Light Mode */
+body {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+/* Dark Mode */
+body.dark {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Center content */
+.container {
+  text-align: center;
+  margin-top: 150px;
+}
+
+/* Button styling */
+.toggle-btn {
+  margin-top: 20px;
+  padding: 12px 18px;
+  font-size: 20px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* Button Hover animation */
+.toggle-btn:hover {
+  transform: scale(1.2) rotate(15deg);
+}
+
+/* Light button */
+body:not(.dark) .toggle-btn {
+  background: #222;
+  color: #fff;
+}
+
+/* Dark button */
+body.dark .toggle-btn {
+  background: #fff;
+  color: #222;
+}
+
